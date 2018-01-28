@@ -8,4 +8,12 @@ function ReverseString(string) {
     }
     return stringReverse;
 }
-console.log(ReverseString("reverseme"));
+console.log(ReverseString("Reverse Me Method 1"));
+
+function ReverseStringArray(string) {
+    var stringLength = string.length;
+    var stringArray = string.split("");
+    var reverseStringArray = stringArray.reverse();
+    return reverseStringArray.join("");
+};
+console.log(ReverseStringArray("Reverse Array Method 2"));
