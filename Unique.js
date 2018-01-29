@@ -6,6 +6,8 @@ function isUnique(array){
       var check = array[i];
         if (output.indexOf(check) === -1)
             return false;
+        else
+            return true;
     }
 }
 console.log(isUnique([4,5,6,2]));
