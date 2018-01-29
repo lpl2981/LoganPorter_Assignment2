@@ -2,12 +2,14 @@
 function isUnique(array){
     var output = [];
     var aLength = array.length;
+    var isUnique = true;
     for (var i=0; i < aLength; i++) {
         var check = array[i];
-        if (output.indexOf(check) === -1)
-            return true;
-        else
-            return false;
+        if (output.indexOf(check) > -1) {
+            isUnique = false;
+        }
+        output.push(check);
     }
+    return isUnique;
 }
-console.log(isUnique([4,5,6,4]));
+console.log(isUnique([1,2,3,4,5]));
