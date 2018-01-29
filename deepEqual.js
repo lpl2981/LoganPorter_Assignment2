@@ -4,6 +4,13 @@ function deepEqual(object1, object2) {
         return true;
     else if (typeof object1 !== object2)
         return false;
+    else
+        for(var i = 0; i < object1.length; i++)
+            if(object1.length === object2.length)
+                i += object1.length;
+                return true;
+            else
+                return false;
 }
 var obj = {here: {is: "an"}, object: 2};
 console.log(deepEqual(obj, obj));
