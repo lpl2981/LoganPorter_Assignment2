@@ -10,7 +10,7 @@ for(var list in object1)
     counter1 += 1;
 for(var list in object2)
     counter2 += 1;
-    if (!(list in object1)){
+    if (!(list in object1) || (object1[list], object2[list])){
         return false;
     }
 }
