@@ -8,4 +8,4 @@ function isUnique(array){
             return false;
     }
 }
-console.log(isUnique(4,5,6,2));
+console.log(isUnique([4,5,6,2]));
